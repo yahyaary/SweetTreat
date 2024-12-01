@@ -1,85 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SweetTreat</title>
-    <style>
-        /* Basic CSS styles with Pink and Blue Sayan palette */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0e0f9; /* Soft pinkish background */
-            margin: 0;
-            padding: 0;
-            color: #2c3e50; /* Dark gray text */
-        }
-
-        header {
-            background-color: #3498db; /* Vibrant blue */
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-bottom: 5px solid #e74c3c; /* Pinkish border */
-        }
-
-        .content {
-            padding: 20px;
-            margin: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #e74c3c; /* Pink accent border */
-        }
-
-        h1 {
-            color: #8e44ad; /* Dark purple-pink */
-        }
-
-        h2 {
-            color: #3498db; /* Blue */
-        }
-
-        p {
-            color: #555555; /* Dark gray text */
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #3498db; /* Blue footer */
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .content {
-                margin: 10px;
-                padding: 15px;
+;
             }
 
-            header, footer {
-                padding: 15px;
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            footer p {
+                font-size: 14px;
             }
         }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>SweetTreat</h1>
+        <h1>Shop with Style</h1>
     </header>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
     <div class="content">
-        <h2>About This Page</h2>
-        <p>This webpage is designed with a bold pink and blue Sayan palette. The combination of these colors aims to create a dynamic and energetic feel, inspired by the strength and power often depicted in the Sayan theme.</p>
+        <h2>Welcome to Shop with Style</h2>
+        <p>Your go-to destination for high-quality products with a stylish flair. Explore our collection of trendy and exclusive items curated just for you. Whether you're looking for fashion, electronics, or home decor, we've got something for everyone!</p>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 1">
+                <div class="details">
+                    <h3>Product 1</h3>
+                    <p>A stylish and functional item perfect for your needs.</p>
+                    <div class="price">$49.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 2">
+                <div class="details">
+                    <h3>Product 2</h3>
+                    <p>Upgrade your lifestyle with this trendy product.</p>
+                    <div class="price">$89.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 3">
+                <div class="details">
+                    <h3>Product 3</h3>
+                    <p>Top-of-the-line quality for the discerning customer.</p>
+                    <div class="price">$119.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 4">
+                <div class="details">
+                    <h3>Product 4</h3>
+                    <p>The perfect blend of style and utility for modern living.</p>
+                    <div class="price">$69.99</div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Sayan Web Page</p>
+        <p>&copy; 2024 Shop with Style. All rights reserved.</p>
     </footer>
 
 </body>
